@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Website Screen Time Tracker",
+  "version": "1.2",
+  "permissions": ["tabs", "storage", "activeTab", "scripting", "idle", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
